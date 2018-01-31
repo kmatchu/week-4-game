@@ -7,38 +7,47 @@
 <body>
 <div class="container">
     <div class="row">
-        <div class="col-md-6 box">
-            <h1>CrystalsCollector!</h1>
+        <div class="col-md-6 box header">
+            CrystalsCollector!
         </div>
     </div>
+    <br />
     <div class="row">
-        <div class="col-md-9 box">
+        <div class="col-md-9 box instructions">
+            <p>You will be given a random number at the start of the game.</p>
+            <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+            <p>You win the game by matching your total score to a random number, you lose the game if your total score goes above the random number.</p>
+            <p>The value of each crystal is hidden from you until you click on it.</p>
+            <p>Each time when the game starts the game will change the values of each crystal.</p>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-md-5 box goal">
+        </div>
+        <div class="col-md-2 box thecount">
+            <div class="row wins"></div>
+            <div class="row losses"></div>
 
         </div>
     </div>
+    <br />
     <div class="row">
-        <div class="col-md-5 box">
-
-        </div>
-        <div class="col-md-2 box">
-
-        </div>
+        <div class="col-md-2 box"><button class="crystals" id="Amethyst"><img class="cryspic" src="assets/images/amethyst.png" alt="Amethyst" /></button></div>
+        <div class="col-md-2 box"><button class="crystals" id="Sapphire"><img class="cryspic" src="assets/images/sapphire.png" alt="Sapphire" /></button></div>
+        <div class="col-md-2 box"><button class="crystals" id="Gold"><img class="cryspic" src="assets/images/gold.png" alt="Gold" /></button></div>
+        <div class="col-md-2 box"><button class="crystals" id="Emerald"><img class="cryspic" src="assets/images/emerald.png" alt="Emerald" /></button></div>
     </div>
+    <br />
     <div class="row">
-        <div class="col-md-2 box"><img class="crystal" src="asset/images/amethyst.png" alt="Amethyst" /></div>
-        <div class="col-md-2 box"><img class="crystal" src="asset/images/sapphire.png" alt="Sapphire" /></div>
-        <div class="col-md-2 box"><img class="crystal" src="asset/images/gold.png" alt="Gold" /></div>
-        <div class="col-md-2 box"><img class="crystal" src="asset/images/emerald.png" alt="Emerald" /></div>
+        <div class="col-md-5 box scorebox">Your total score is:</div>
     </div>
+    <br />
     <div class="row">
-        <div class="col-md-5 box"><h5>Your total score is:</h5></div>
-    </div>
-    <div class="row">
-        <div class="col-md-5 box"></div>
+        <div class="col-md-5 box score scorebox"></div>
     </div> 
 </div>
-<script>
-
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="assets/scripts.js"></script>
 </body>
 </html>
